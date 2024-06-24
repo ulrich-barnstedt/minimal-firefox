@@ -8,6 +8,7 @@ Colors adjust automatically to the currently open tab.
 
 ![Light](./light.png)
 ![Dark](./dark.png)
+![Color](./color.png)
 
 
 ## Installation
