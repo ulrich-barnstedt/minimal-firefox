@@ -14,7 +14,7 @@ Colors adjust automatically to the currently open tab.
 
 _[How to locate your profile folder](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data#w_how-do-i-find-my-profile)_
 
-1. Install [`Adaptive tab bar color`](https://addons.mozilla.org/en-US/firefox/addon/adaptive-tab-bar-colour/) and [Sidebery](https://addons.mozilla.org/de/firefox/addon/sidebery/)
+1. Install [Adaptive tab bar color](https://addons.mozilla.org/en-US/firefox/addon/adaptive-tab-bar-colour/) and [Sidebery](https://addons.mozilla.org/de/firefox/addon/sidebery/)
 2. Copy the contents of the repository to `[your profile]/chrome` (you have to create this folder)
 3. Copy the following contents into `[your profile]/user.js` (or manually set the settings in `about:config` 
 
@@ -31,3 +31,7 @@ user_pref("browser.urlbar.unitConversion.enabled", true);
 user_pref("browser.urlbar.trimHttps", false);
 user_pref("browser.urlbar.trimURLs", false);
 ```
+
+## Inspiration
+
+This project is very loosely based on (and inspired by) [ShyFox](https://github.com/Naezr/ShyFox), with the intention of building a more lightweight and less complicated alternative.
