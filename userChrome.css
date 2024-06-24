@@ -69,3 +69,8 @@ toolbarpaletteitem[place="toolbar"][id^="wrapper-customizableui-special-spring"]
         /*border-top: 2px solid var(--toolbar-field-background-color);*/
     }
 }
+
+/* icons in url-bar */
+.urlbar-page-action, #tracking-protection-icon-container, #identity-icon-box {
+    border-radius: 10px !important;
+}
