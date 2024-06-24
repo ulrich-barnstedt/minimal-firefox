@@ -1,14 +1,81 @@
-/* base */
-@import url("ShyFox/shy-variables.css");
-@import url("ShyFox/shy-global.css");
+/*!* base *!*/
+/*@import url("ShyFox/shy-variables.css");*/
+/*@import url("ShyFox/shy-global.css");*/
 
-/* main elements */
-@import url("ShyFox/shy-sidebar.css");
-@import url("ShyFox/shy-toolbar.css");
-@import url("ShyFox/shy-navbar.css");
-@import url("ShyFox/shy-findbar.css");
-@import url("ShyFox/shy-controls.css");
+/*!* main elements *!*/
+/*@import url("ShyFox/shy-sidebar.css");*/
+/*@import url("ShyFox/shy-toolbar.css");*/
+/*@import url("ShyFox/shy-navbar.css");*/
+/*@import url("ShyFox/shy-findbar.css");*/
+/*@import url("ShyFox/shy-controls.css");*/
 
-/* addons */
-@import url("ShyFox/shy-compact.css");
-@import url("ShyFox/shy-icons.css");
+/*!* addons *!*/
+/*@import url("ShyFox/shy-compact.css");*/
+/*@import url("ShyFox/shy-icons.css");*/
+
+
+/* Hide old tabs and other elements */
+.titlebar-spacer,
+#tabbrowser-tabs,
+#alltabs-button,
+#firefox-view-button {
+    display: none;
+}
+
+/* Move control buttons into same bar as other elements */
+#navigator-toolbox {
+    flex-direction: row-reverse;
+    padding: 5px;
+}
+#titlebar {
+    width: 100px;
+}
+#nav-bar {
+    flex-grow: 2;
+}
+
+/* Limit size of URL bar, make rounder */
+#urlbar-container {
+    max-width: 600px;
+}
+#urlbar-background {
+    border-radius: 10px !important;
+}
+
+/* Make spacers in titlebar be able to grown infinite */
+toolbarpaletteitem[place="toolbar"][id^="wrapper-customizableui-special-spring"], toolbarspring {
+    max-width: none !important;
+}
+
+/* Customize tab bar on left */
+#sidebar-header {
+    display: none;
+}
+#sidebar-splitter {
+    border: none !important;
+    background-color: var(--sidebar-background-color) !important;
+}
+#sidebar-box {
+    padding: 5px 4px 10px 10px;
+}
+
+
+/*#main-window:not([inDOMFullscreen="true"])[chromehidden=""] {*/
+/*    !* add rounded corners and outline to browser content *!*/
+
+/*    #appcontent browser {*/
+/*        border-radius: 10px !important;*/
+/*        !*border: var(--outline);*!*/
+/*    }*/
+
+/*    #appcontent .browserStack::after {*/
+/*        !*border: var(--outline);*!*/
+/*        border-radius: 10px;*/
+/*    }*/
+
+/*}*/
+
+/*hbox[id^='panel-'] {*/
+/*    border-radius: 30px !important;*/
+/*    background-color: transparent !important;*/
+/*}*/
